@@ -4,43 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Aryan Mahida">
+    <meta name="author" content="Aryan Mahida">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
     <title>Shopping Cart</title>
 </head>
 
 <body>
+    <!-- navigation-bar/header secion -->
+    <header>
+            <nav id="navigation-bar" class="nav-bar">
+                <img src="assets/flipkart-logo.png" alt="flipkart-logo">
+                <div class="search-bar">
+                    <input type="text" name="search" id="search-bar"
+                        placeholder="search for products, brands and more">
+                    <button type="button"><i class="fa fa-search" style="color:#2874f0"></i></button>
+                </div>
+                <div class="login-more-cart">
+                    <button type="button" name="login-btn">Login</button>
+                    <span class="more-span">
+                        More
+                        <i class="fa fa-angle-down down"></i>
+                    </span>
+                    <span class="cart" id="cart-btn">
+                        <i class="fa-solid fa-cart-shopping" style="color:white"></i>
+                        Cart
+                    </span>
+                </div>
+            </nav>
+    </header>
     <div class="placeholder" id="placeholder">
-        <div id="main-div" name="main">
-            <!-- navigation-bar/header secion -->
-            <header>
-                <nav id="navigation-bar" class="nav-bar">
-                    <img src="assets/flipkart-logo.png" style="margin-top: 4px " height="50px" alt="">
-                    <div class="search-bar">
-                        <input type="text" name="search" id="search-bar"
-                            placeholder="search for products, brands and more">
-                        <button type="button"><i class="fa fa-search" style="color:#2874f0"></i></button>
-                    </div>
-                    <div class="login-more-cart">
-                        <button type="button" name="login-btn">Login</button>
-                        <span class="more-span">
-                            More
-                            <i class="fa fa-angle-down down"></i>
-                        </span>
-                        <span class="cart" id="cart-btn">
-                            <i class="fa-solid fa-cart-shopping" style="color:white"></i>
-                            Cart
-                        </span>
-                    </div>
-                </nav>
-            </header>
+        <div id="main-div" >
+          
             <section id="categories-section" class="categories-sections">
                 <div id="" class="categories">
                     <div class="category">
@@ -118,7 +119,8 @@
                         <a href="#">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
                                 alt="">
-                            <div>Beauty, Toys & More
+                            <div title="Beauty, toys and more" style="width: 90px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;   display: inline-block;     
+ ">Beauty, Toys & More
                                 <i class="fa fa-angle-down down"></i>
                             </div>
                         </a>
@@ -352,9 +354,6 @@
                                     <div class="desc">Now start from 12999!</div>
                                 </a>
                             </div>
-
-                            
-
 
                         </div>
                     </div>
