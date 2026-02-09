@@ -100,8 +100,8 @@ button[name="login-btn"]{
 
 .deals-of-the-day{
     display: flex;
-    padding: 25px 0px;
-    border-bottom: 1px solid black;
+    padding: 10px 0px;
+    border-bottom: 0.2px solid black;
 }
 
 .VIEW-ALL{
@@ -138,10 +138,12 @@ button[name="login-btn"]{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-self: center;
+    width:84%;
 }
 
 .row-2 .col-1{
-     position: relative;
+    position: relative;
     background-color: white;
     width: 100%;
     margin:5px;
@@ -153,8 +155,8 @@ button[name="login-btn"]{
 }
 
 .items-showcase .item a img {
-    width: 100px;
-    height: 125px;
+    width: 150px;
+    height: 200px;
     
 }
 .item{
@@ -196,7 +198,22 @@ button[name="login-btn"]{
 }
 
 .col-1 button[name="scroll-btn"]{
-    float: right;
-    
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
+    padding: 20px 10px;
+    background-color: white;
+    box-shadow: 0 0px 4px black;
+    font-size: 30px;
+}
 
+row-2 .items-showcase{
+
+    justify-items: center;
+}
+
+.deals-of-the-day div {
+    font-weight: 300;
+    color:gray
 }
