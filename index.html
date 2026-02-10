@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aryan Mahida">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <!-- navigation-bar/header secion -->
+    <header>
+            <nav id="navigation-bar" class="nav-bar">
+                <img src="assets/flipkart-logo.png" alt="flipkart-logo">
+                <div class="search-bar">
+                    <input type="text" name="search" id="search-bar"
+                        placeholder="search for products, brands and more">
+                    <button type="button"><i class="fa fa-search" style="color:#2874f0"></i></button>
+                </div>
+                <div class="login-more-cart">
+                    <button type="button" name="login-btn">Login</button>
+                    <span class="more-span">
+                        More
+                        <i class="fa fa-angle-down down"></i>
+                    </span>
+                    <span class="cart" id="cart-btn">
+                        <i class="fa-solid fa-cart-shopping" style="color:white"></i>
+                        Cart
+                    </span>
+                </div>
+            </nav>
+    </header>
+
+    <!-- section to hold all the content  -->
+    <div class="placeholder" id="placeholder">
+        <div id="main-div" >
+          <!-- categroy header section  -->
+            <section id="categories-section" class="categories-sections">
+                <div id="" class="categories">
+                    <div class="category">
+                        <a href="#">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"
+                                alt="">
+                            <div>Top Deals</div>
+                        </a>
+
+                    </div>
+
+                    <div class="category">
+                        <a href="#">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
+                                alt="">
+                            <div>Grocery</div>
+                        </a>
+
+                    </div>
+
+                    <div class="category">
+                        <a href="#">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+                                alt="">
+                            <div>Mobiles</div>
+                        </a>
+
+                    </div>
+
+                    <div class="category">
+                        <a href="#">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100"
+                                alt="">
+                            <div>Fashion</div>
+                        </a>
+
+                    </div>
+
+                    <div class="category">
+                        <a href="#">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+                                alt="">
+                            <div>Electronics</div>
+                        </a>
+
+                    </div>
+
+                    <div class="category">
+                        <a href="#">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
+                                alt="">
+                            <div>Home</div>
+                        </a>
+
+                    </div>
+
+                    <div class="category">
+                        <a href="#">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+                                alt="">
+                            <div>Apppliances</div>
+                        </a>
+
+                    </div>
+                    <div class="category">
+                        <a href="#">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100"
+                                alt="">
+                            <div>Travel</div>
+                        </a>
+
+                    </div>
+
+                    <div class="category">
+                        <a href="#">
+                            <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+                                alt="">
+                            <div title="Beauty, toys and more" style="width: 90px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;   display: inline-block;     
+ ">Beauty, Toys & More
+                                <i class="fa fa-angle-down down"></i>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </section>
+            <!-- showcase section 2 rows of item/s -->
+            <section id="showcase">
+                <div id="showcase-container">
+                    <!-- row 1 with items and ad -->
+                    <div class="row-1">
+                        <!-- items  -->
+                        <div class="col-1">
+                            <div class="deals-of-the-day">
+                                <span>
+                                    <span id="deals-title">
+                                        Deals of the Day &nbsp;
+                                    </span>
+                                    <i class="fa-regular fa-clock"></i>
+                                    <span style="color: gray;">  &nbsp; 22:07:36 Left</span>
+                                </span>
+                                <button type="button" class="VIEW-ALL">
+                                    VIEW ALL
+                                </button>
+                            </div>
+                            <div class="items-showcase">
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://rukminim1.flixcart.com/image/612/612/k4rcmfk0pkrrdj/watch-refurbished/t/n/g/c-ad207-casio-original-imaeymfacdzxbhh9.jpeg?q=70"
+                                            alt="watch">
+                                        <div class="item-title">
+                                            Casion, Fastrack, Sonata
+                                        </div>
+                                        <div class="discount"> Upto 80&#37;&plus;Extra10&#37;Off </div>
+                                        <div class="desc">Knockout Deals!</div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://rukminim1.flixcart.com/image/612/612/kxc5nrk0/home-temple/4/9/y/22-5-22-5-599-temple-0036-jrwall-art-20-3-original-imag9tzxe6fczhjs.jpeg?q=70"" alt="
+                                            watch">
+                                        <div class="item-title">
+                                            Home Temples & more
+                                        </div>
+                                        <div class="discount">Extra10&#37;Off </div>
+                                        <div class="desc">Space Saving furniture</div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://www.bing.com/th/id/OIP.Dr23Lqo9XshbVgkY1FVJIAHaHW?w=130&h=128&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                                            alt="watch">
+                                        <div class="item-title">
+                                            Premium Tablet Cases
+                                        </div>
+                                        <div class="discount">Extra10&#37;Off </div>
+                                        <div class="desc">For All Top Models</div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://www.bing.com/th?id=OPAC.rs1AbnkyHBLB3g474C474&o=5&pid=21.1&w=140&h=140&rs=1&qlt=100&dpr=1&o=2&c=8"
+                                            alt="watch">
+                                        <div class="item-title">
+                                            Best of Home Decor
+                                        </div>
+                                        <div class="discount"> from &#8377;79
+                                        </div>
+                                        <div class="desc">Lowest Price Ever</div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://www.bing.com/th/id/OIP.nlvx5fUMAKKBTVX4CB4gigHaHa?w=124&h=128&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                                            alt="watch">
+                                        <div class="item-title">
+                                            Metronaut, Provogue &amp;...
+                                        </div>
+                                        <div class="discount"> From &#8377;249+Extra10&#37;Off </div>
+                                        <div class="desc">Jackets, Dresses &amp; More</div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://www.bing.com/th/id/OIP.QupID-7-vL3DV2ldw7vWAgHaEK?w=206&h=128&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                                            alt="watch">
+                                        <div class="item-title">
+                                            Phones
+                                        </div>
+                                        <div class="discount"> Upto 80&#37;&plus;Extra10&#37;Off </div>
+                                        <div class="desc">Now start from 12999!</div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://th.bing.com/th/id/OSK.EQuuVk6EFSN6Py8pcRiZFSuXEHHqZ6Dr0enZhmBSWy4?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                            alt="watch">
+                                        <div class="item-title">
+                                                Pokemons
+                                        </div>
+                                        <div class="discount"> Upto 80&#37;&plus;Extra10&#37;Off </div>
+                                        <div class="desc">Knockout Deals!</div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://www.bing.com/th/id/OIP.1Lz_1ruji6x5diFtQi9kBwHaGe?w=151&h=128&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                                            alt="watch">
+                                        <div class="item-title">
+                                            Cameras 
+                                        </div>
+                                        <div class="discount"> Upto 80&#37;&plus;Extra10&#37;Off </div>
+                                        <div class="desc">Knockout Deals!</div>
+                                    </a>
+                                </div>
+
+                                <div class="item">
+                                    <a href="#">
+                                        <img src="https://th.bing.com/th?id=OPAC.%2fiOah%2fb54iXj%2bg474C474&w=200&h=200&c=17&o=5&dpr=2&pid=21.1"
+                                            alt="watch">
+                                        <div class="item-title">
+                                            Monitors
+                                        </div>
+                                        <div class="discount"> Upto 80&#37;&plus;Extra10&#37;Off </div>
+                                        <div class="desc">Knockout Deals!</div>
+                                    </a>
+                                </div>
+
+
+                            </div>
+                            <!-- view all button -->
+                            <button type="button" name="scroll-btn"> &gt;</button>
+                        </div>
+
+                        <!-- ad image -->
+                        <div class="col-2">
+                            <figure>
+                                <img src="./assets/adimage.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- row 2 with items -->
+                    <div class="row-2">
+                    <div class="col-1">
+                        <div class="deals-of-the-day">
+                            <span>
+                                <span id="deals-title">
+                                    Muscial Instruments  &nbsp;
+                                </span>
+                              
+                                <div> Shop Now!</div>
+                            </span>
+                            <button type="button" class="VIEW-ALL">
+                                VIEW ALL
+                            </button>
+                        </div>
+                        <div class="items-showcase">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://th.bing.com/th/id/OIP.VVRSwJmcAM4--wFHrQK2UQAAAA?w=134&h=108&c=7&qlt=90&bgcl=284c69&r=0&o=6&pid=13.1"
+                                        alt="watch">
+                                    <div class="item-title">
+                                        harmoniums
+                                    </div>
+                                    <div class="discount"> Upto 80&#37;&plus;Extra10&#37;Off </div>
+                                    <div class="desc">Knockout Deals!</div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://www.bing.com/th/id/OIP.GCTDOA9Yo9CYOnuR56te0gHaD4?w=251&h=128&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="
+                                        watch">
+                                    <div class="item-title">
+                                        Flutes
+                                    </div>
+                                    <div class="discount">Extra10&#37;Off </div>
+                                    <div class="desc">Space Saving furniture</div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://www.bajaao.com/cdn/shop/files/yamaha-acoustic-guitars-pack-tobacco-sunburst-yamaha-f280-40-inch-acoustic-guitar-with-strap-polishing-cloth-picks-e-book-29262765293747.jpg?v=1769754954&width=600"
+                                        alt="watch">
+                                    <div class="item-title">
+                                        Acoustic Guitars
+                                    </div>
+                                    <div class="discount">Extra10&#37;Off </div>
+                                    <div class="desc">For All Top Models</div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://www.bing.com/th/id/OIP.32otxA1DFifnPddY0hzucgHaHo?w=127&h=128&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                                        alt="watch">
+                                    <div class="item-title">
+                                        Musical Accessories 
+                                    </div>
+                                    <div class="discount"> from &#8377;79
+                                    </div>
+                                    <div class="desc">Lowest Price Ever</div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://www.bing.com/th/id/OIP._aUDz3ZRq4__vSZuuwO54gHaGj?w=146&h=128&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                                        alt="watch">
+                                    <div class="item-title">
+                                        Microphone Accessories
+                                    </div>
+                                    <div class="discount"> From &#8377;249+Extra10&#37;Off </div>
+                                    <div class="desc">Jackets, Dresses &amp; More</div>
+                                </a>
+                            </div>
+
+                            <div class="item">
+                                <a href="#">
+                                    <img src="https://www.bing.com/th/id/OIP.KYowXnkQ5uOxhIZwSSGaQgHaE4?w=182&h=128&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+                                        alt="watch">
+                                    <div class="item-title">
+                                        Audio amplifiers 
+                                    </div>
+                                    <div class="discount"> Upto 80&#37;&plus;Extra10&#37;Off </div>
+                                    <div class="desc">Now start from 12999!</div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+                    
+                </div>
+            </section>
+
+        </div>
+    </div>
+</body>
+
+</html>
